@@ -1,0 +1,69 @@
+Sistemabiblioteca
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    //gerenciamento de biblioteca/nao perder info
+    int id;
+    int ano;
+    int status;
+    char livro[100];
+    char titulo [100];
+    char autor [100];
+    char frase;
+    int opcao;
+    char resposta;
+
+    do{
+        printf("\nSISTEMA DE GERENCIAMENTO DE LIVROS.\n");
+        printf(" 1 para cadastrar o livro.\n");
+        printf(" 2 para listar livros.\n");
+        printf(" 0 digite para sair.\n");
+        
+        scanf("%d", &opcao);
+        switch (opcao){
+        case 1:
+        	do{
+        printf("cadastrando o livro ..\n");
+        printf("digite o id\n");
+        scanf("%d",&id);
+
+    printf("digite qual o nome do livro\n");
+    scanf(" %[^\n]",livro);
+
+    printf("digite o titulo do livro\n");
+    scanf(" %[^\n]",titulo);
+
+    printf("digite o ano do livro\n");
+    scanf(" %d",&ano);
+    //se ele escrever um ano negativo digitar erro
+    
+
+    printf("digite o autor do livro\n");
+    scanf(" %[^\n]",autor);
+
+    printf(" o status do livro\n ");
+    scanf(" %d",&status);
+    
+    printf("deseja repetir[s/n]?\n");
+    scanf(" %c",&resposta);
+    }while (resposta == 's' || resposta == 'S');
+                break;
+        
+        case 2:
+        printf("listando.");
+            break;
+            
+        case 0:
+        	printf("Saindo...\n");
+                break;
+        
+        default:
+         printf("opçao invalida");
+            break;
+        }
+    }while(opcao != 0);
+
+
+    return 0;
+}
