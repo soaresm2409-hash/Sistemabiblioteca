@@ -1,4 +1,4 @@
-# Sistemabiblioteca
+# Sistemabiblioteca.c
 Sistema de gerenciamento de livros desenvolvido em C
 Este é um projeto acadêmico desenvolvido para praticar os fundamentos da linguagem C e lógica de programação.
 - Cadastro de livros (ID, Título, Autor, Ano).
